@@ -1,11 +1,22 @@
+.idea/
 /.bundle/
-/.yardoc
-/_yardoc/
-/coverage/
 /doc/
 /pkg/
 /spec/reports/
 /tmp/
+*.bundle
+*.so
+*.o
+*.a
+mkmf.log
+.irb-history
+.DS_Store
+Gemfile.lock
+coverage/
+File::NULL
+/.yardoc
+/_yardoc/
+/coverage/
 
 # rspec failure tracking
 .rspec_status

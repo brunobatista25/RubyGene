@@ -1,0 +1,8 @@
+<%= "# language: #{options[:lang]}" %>
+<%= I18n.translate( :feature ) %>: <%= config[:name] %>
+
+  <%= I18n.translate( :background ) %>:
+    # <%= I18n.translate( "comments.insert_steps" ) %>
+
+  <%= I18n.translate( :scenario ) %>: <%= I18n.translate( :first_scenario ) %>
+    # <%= I18n.translate( "comments.insert_steps" ) %>

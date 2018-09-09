@@ -1,0 +1,6 @@
+class <%= config[:name] %>Page < SitePrism::Page
+
+  # <%= I18n.translate 'comments.elements' %>
+  # element :button,       pending 'Insert button identificator'
+
+end

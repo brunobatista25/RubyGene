@@ -1,0 +1,7 @@
+## YAML Templatesss
+---
+default: -p pretty -p html
+for_ci:  --format progress
+pretty: --format pretty
+html:  --format html --out=results/report.html
+html:  --format json --out=results/json.html

@@ -1,0 +1,4 @@
+[caps]
+deviceName = "Nexus 5X API 25"
+platformName= "Android"
+app = "caminho_do_app.apk"

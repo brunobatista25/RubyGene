@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'generate_ruby_tests/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'generate_ruby_tests'
+  spec.name          = 'rubygene'
   spec.version       = GenerateRubyTests::VERSION
   spec.authors       = ['brunobatista25']
   spec.email         = ['brunobatista101@gmail.com']
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
     f.match(%r{^(test|spec|features)/})
   end
 
-  spec.executables   = ['generate_repo_test']
+  spec.executables   = ['rubygene']
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 1.16'

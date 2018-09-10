@@ -92,7 +92,7 @@ generate_repo_test generate page nome_da_page
 ## Gerar um screens
 
 ```ruby
-generate_repo_test generate screens nome_da_screen
+generate_repo_test generate screen nome_da_screen
 ```
 
 ## Gerar um services

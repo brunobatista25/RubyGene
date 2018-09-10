@@ -7,6 +7,7 @@ require 'i18n'
 require 'gherkin' # Used here as a translation source
 require 'json'
 require 'yaml'
+require 'tempfile'
 
 require File.join(File.dirname(__FILE__),
                   '../lib/generate_ruby_tests/generate_ruby_test_helper')

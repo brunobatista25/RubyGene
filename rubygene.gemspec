@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
     SitePrism, Capybara, Selenium, Httparty and JsonSchema.}
   spec.description   = %q{A simple gem to generate all files needed in a
     project Mobile, Web and Api.}
-  spec.homepage      = 'https://github.com/brunobatista25/generate_ruby_tests'
+  spec.homepage      = 'https://github.com/brunobatista25/RubyGene'
   spec.license       = 'MIT'
 
   spec.files = `git ls-files -z`.split("\x0").reject do |f|

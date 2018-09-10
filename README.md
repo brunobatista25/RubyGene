@@ -74,13 +74,13 @@ E tambem é possivel gerar os steps,features,services,pages etc... sozinhos
 ## Gerar um step
 
 ```ruby
-generate_repo_test generate spet nome_do_step
+generate_repo_test generate spec nome_do_step
 ```
 
 ## Gerar um feature
 
 ```ruby
-generate_repo_test generate spet nome_da_feature
+generate_repo_test generate feature nome_da_feature
 ```
 
 ## Gerar um page
@@ -102,6 +102,7 @@ generate_repo_test generate service nome_do_service
 ```
 
 Agora se precisar criar uma feature, page e step também tem um atalho pra isso :)
+ 
 ## Gerar feature,page,step
 
 ```ruby
@@ -109,6 +110,7 @@ generate_repo_test generate all_web
 ```
 
 Agora se precisar criar uma feature, screens e step também tem um atalho pra isso :)
+
 ## Gerar feature,screens,step
 
 ```ruby
@@ -116,6 +118,7 @@ generate_repo_test generate all_mobile
 ```
 
 Agora se precisar criar uma feature, services e step também tem um atalho pra isso :)
+
 ## Gerar feature,services,step
 
 ```ruby

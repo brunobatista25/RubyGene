@@ -1,0 +1,5 @@
+class <%= config[:name] %>Screens
+
+  # <%= I18n.translate 'comments.elements' %>
+
+end

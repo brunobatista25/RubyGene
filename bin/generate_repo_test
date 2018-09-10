@@ -25,8 +25,6 @@ module GeneCapybara
       I18n.config.default_locale = options[:lang]
       in_root_project_folder?
       create_feature_file(name)
-      create_steps_file name
-      create_page_file name
     end
 
     desc 'step [RESOURCE_NAME]', 'Generates a step'
@@ -49,6 +47,16 @@ module GeneCapybara
       create_page_file name
     end
 
+    desc 'screens [RESOURCE_NAME]', 'Generates screens'
+    option :lang,
+           banner: 'any of the gherkin supported languages',
+           default: :en
+    def screens(name)
+      I18n.config.default_locale = options[:lang]
+      in_root_project_folder?
+      create_screens_file name
+    end
+
     desc 'services [RESOURCE_NAME]', 'Generates services'
     option :lang,
            banner: 'any of the gherkin supported languages',
@@ -57,6 +65,41 @@ module GeneCapybara
       I18n.config.default_locale = options[:lang]
       in_root_project_folder?
       create_service_file name
+    end
+
+    desc 'all_web [RESOURCE_NAME]', 'Generates features, steps and pages'
+    option :lang,
+           banner: 'any of the gherkin supported languages',
+           default: :en
+    def all_web(name)
+      I18n.config.default_locale = options[:lang]
+      in_root_project_folder?
+      create_feature_file(name)
+      create_steps_file name
+      create_page_file name
+    end
+
+    desc 'all_mobile [RESOURCE_NAME]', 'Generates features, steps and screens'
+    option :lang,
+           banner: 'any of the gherkin supported languages',
+           default: :en
+    def all_mobile(name)
+      I18n.config.default_locale = options[:lang]
+      in_root_project_folder?
+      create_feature_file(name)
+      create_steps_file name
+      create_screens_file name
+    end
+
+    desc 'all_api [RESOURCE_NAME]', 'Generates feature and steps'
+    option :lang,
+           banner: 'any of the gherkin supported languages',
+           default: :en
+    def all_api(name)
+      I18n.config.default_locale = options[:lang]
+      in_root_project_folder?
+      create_feature_file(name)
+      create_steps_file name
     end
 
     def self.source_root

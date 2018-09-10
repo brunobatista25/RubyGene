@@ -51,7 +51,7 @@ module GeneCapybara
     option :lang,
            banner: 'any of the gherkin supported languages',
            default: :en
-    def screens(name)
+    def screen(name)
       I18n.config.default_locale = options[:lang]
       in_root_project_folder?
       create_screens_file name
@@ -100,6 +100,7 @@ module GeneCapybara
       in_root_project_folder?
       create_feature_file(name)
       create_steps_file name
+      create_service_file name
     end
 
     def self.source_root

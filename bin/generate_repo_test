@@ -195,7 +195,7 @@ module GeneCapybara
       # Carregando as traducoes do pepino e do
       # locales pasta desta gem
       locales_folder_path = File.join(File.dirname(__FILE__),
-                                      '..', 'lib', 'genecapybara', 'locales')
+                                      '../lib/locales')
       I18n.load_path = Dir[translations_temp_file,
                            File.join(locales_folder_path, '*.yml')]
       I18n.backend.load_translations

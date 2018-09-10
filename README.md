@@ -74,7 +74,7 @@ E tambem é possivel gerar os steps,features,services,pages etc... sozinhos
 ## Gerar um step
 
 ```ruby
-generate_repo_test generate spec nome_do_step
+generate_repo_test generate step nome_do_step
 ```
 
 ## Gerar um feature
@@ -123,6 +123,12 @@ Agora se precisar criar uma feature, services e step também tem um atalho pra i
 
 ```ruby
 generate_repo_test generate all_api
+```
+
+Por padrão tudo e gerado em inglês caso precise utilizar em português rode com o `--lang=pt`
+
+```ruby
+generate_repo_test generate all_api --lang=pt
 ```
 
 ## Contribuição

@@ -4,3 +4,4 @@ pt:
     insert_steps: "Insira os passos"
     elements: "Declare todos os elementos da página"
     actions: "Declare todas as ações da página"
+    services: "Onde fica as configuraçōes de uma determinada requisição"

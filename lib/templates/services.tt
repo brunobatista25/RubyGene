@@ -1,5 +1,7 @@
 module <%= config[:name] %>Service
   include HTTParty
+  
+  # <%= I18n.translate 'comments.services' %>
   base_uri CONFIG['url_default'].to_s
   headers 'Content-Type' => 'application/json'
   format :json

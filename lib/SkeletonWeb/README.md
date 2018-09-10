@@ -21,28 +21,26 @@ Install [Webdriver Safari extension](http://selenium-release.storage.googleapis.
 ### Run tests in DEV with Chrome###
 Type this in the tests folder:
 ```shell
-bundle exec cucumber
+bundle exec cucumber  -p ci -p html -p headless -p dev
 ```
 
-### Run tests in DEV with Chrome###
+### Run tests in DEV with headless###
 Type this in the tests folder:
 ```shell
-bundle exec cucumber
+bundle exec cucumber  -p ci -p html -p headless -p dev
 ```
 
 ### Run tests in HMG with Chrome###
 Type this in the tests folder:
 ```shell
-bundle exec cucumber -p chrome -p hmg
+bundle exec cucumber -p pretty -p html -p no_headless -p hmg
 ```
 
-### Run tests in HMG with Firefox###
+### Run tests in HMG with headless###
 Type this in the tests folder:
 ```shell
-bundle exec cucumber -p firefox -p hmg
+bundle exec cucumber -p ci -p html -p headless -p hmg
 ```
-
-##
 
 ### Run with tags###
 Type this in the tests folder:

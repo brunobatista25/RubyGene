@@ -1,43 +1,137 @@
 # GenerateRubyTests
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/generate_ruby_tests`. To experiment with that code, run `bin/console` for an interactive prompt.
+Bem vindo a gem GenerateRubyTests é uma gem baseada na gem [Magneton](https://github.com/concretesolutions/magneton).
 
-TODO: Delete this and the text above, and describe your gem
+O intuito da gem GenerateRubyTests é conseguir gerar projetos já configurados para um projeto Web, Mobile ou Api. Todos eles baseados na estrutura de um projeto em cucumber.
 
-## Installation
+## Instalação
 
-Add this line to your application's Gemfile:
+Adicione este comando no terminal:
 
 ```ruby
-gem 'generate_ruby_tests'
+gem install generate_ruby_tests
 ```
 
-And then execute:
+# Usando a gem
 
-    $ bundle
 
-Or install it yourself as:
+## Gerar um projeto Web
 
-    $ gem install generate_ruby_tests
+```ruby
+generate_repo_test new_web nome_do_projeto
+```
 
-## Usage
+Onde irá gerar um projeto deste modelo, já com tudo configurado:
 
-TODO: Write usage instructions here
+Features: Onde fica as funcionalidades do projeto;
 
-## Development
+Steps: Onde são realizados os testes de fato;
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Pages: Onde fica mapeado os elementos e metódos de uma determinada página;
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Support: Onde fica as configuraçōes do projeto;
 
-## Contributing
+Results: Onde fica o resultado dos testes e relatórios.
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/generate_ruby_tests. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+## Gerar um projeto Api
 
-## License
+```ruby
+generate_repo_test new_api nome_do_projeto
+```
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+Onde irá gerar um projeto deste modelo, já com tudo configurado:
 
-## Code of Conduct
+Features: Onde fica as funcionalidades do projeto;
 
-Everyone interacting in the GenerateRubyTests project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/generate_ruby_tests/blob/master/CODE_OF_CONDUCT.md).
+Steps: Onde são realizados os testes de fato;
+
+Services: Onde fica as configuraçōes do serviço;
+
+Support: Onde fica as configuraçōes do projeto;
+
+Results: Onde fica o resultado dos testes e relatórios.
+
+## Gerar um projeto Mobile
+
+```ruby
+generate_repo_test new_mobile nome_do_projeto
+```
+
+Onde irá gerar um projeto deste modelo, já com tudo configurado:
+
+Features: Onde fica as funcionalidades do projeto;
+
+Steps: Onde são realizados os testes de fato;
+
+Screens: Onde fica mapeado os elementos e metódos de uma determinada screen;
+
+Support: Onde fica as configuraçōes do projeto;
+
+Results: Onde fica o resultado dos testes e relatórios.
+
+E tambem é possivel gerar os steps,features,services,pages etc... sozinhos 
+
+## Gerar um step
+
+```ruby
+generate_repo_test generate spet nome_do_step
+```
+
+## Gerar um feature
+
+```ruby
+generate_repo_test generate spet nome_da_feature
+```
+
+## Gerar um page
+
+```ruby
+generate_repo_test generate page nome_da_page
+```
+
+## Gerar um screens
+
+```ruby
+generate_repo_test generate screens nome_da_screen
+```
+
+## Gerar um services
+
+```ruby
+generate_repo_test generate service nome_do_service
+```
+
+Agora se precisar criar uma feature, page e step também tem um atalho pra isso :)
+## Gerar feature,page,step
+
+```ruby
+generate_repo_test generate all_web
+```
+
+Agora se precisar criar uma feature, screens e step também tem um atalho pra isso :)
+## Gerar feature,screens,step
+
+```ruby
+generate_repo_test generate all_mobile
+```
+
+Agora se precisar criar uma feature, services e step também tem um atalho pra isso :)
+## Gerar feature,services,step
+
+```ruby
+generate_repo_test generate all_api
+```
+
+## Contribuição
+
+Relatórios de bugs e solicitações de recebimento são bem-vindos no GitHub em https://github.com/brunobatista25/generate_ruby_tests. Este projeto destina-se a ser um espaço seguro e acolhedor para colaboração, e espera-se que os contribuintes adiram à [Contributor Covenant](http://contributor-covenant.org) Código de conduta.
+
+## Licença
+
+A gema está disponível como código aberto sob os termos do
+ [MIT License](https://opensource.org/licenses/MIT).
+
+## Có digo de conduta
+
+Espera-se que todos que interagem nas bases de código do projeto GenerateRubyTests, rastreadores de problemas, salas de bate-papo e listas de discussão sigam o
+ [code of conduct](https://github.com/brunobatista25/generate_ruby_tests/blob/master/CODE_OF_CONDUCT.md).

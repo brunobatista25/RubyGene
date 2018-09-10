@@ -131,7 +131,7 @@ Relatórios de bugs e solicitações de recebimento são bem-vindos no GitHub em
 A gema está disponível como código aberto sob os termos do
  [MIT License](https://opensource.org/licenses/MIT).
 
-## Có digo de conduta
+## Código de conduta
 
 Espera-se que todos que interagem nas bases de código do projeto GenerateRubyTests, rastreadores de problemas, salas de bate-papo e listas de discussão sigam o
  [code of conduct](https://github.com/brunobatista25/generate_ruby_tests/blob/master/CODE_OF_CONDUCT.md).

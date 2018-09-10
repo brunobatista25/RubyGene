@@ -131,6 +131,12 @@ Por padrão tudo e gerado em inglês caso precise utilizar em português rode co
 rubygene generate all_api --lang=pt
 ```
 
+## Para Proximas versōes
+
+- Adicionar gerador pra JsonSchema
+- Adicionar gerador de projeto calabash
+- Adicionar gerador para projetos Rspec pra Web, Mobile e Api.
+
 ## Contribuição
 
 Relatórios de bugs e solicitações de recebimento são bem-vindos no GitHub em https://github.com/brunobatista25/rubygene. Este projeto destina-se a ser um espaço seguro e acolhedor para colaboração, e espera-se que os contribuintes adiram à [Contributor Covenant](http://contributor-covenant.org) Código de conduta.

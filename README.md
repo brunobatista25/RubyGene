@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/rubygene.svg)](https://badge.fury.io/rb/rubygene)
+
 # RubyGene
 
 O intuito da RubyGene é conseguir gerar projetos já configurados para um projeto Web, Mobile ou Api. Todos eles baseados na estrutura de um projeto em cucumber, page objects e relatórios.

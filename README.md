@@ -136,6 +136,7 @@ rubygene generate all_api --lang=pt
 - Adicionar gerador pra JsonSchema
 - Adicionar gerador de projeto calabash
 - Adicionar gerador para projetos Rspec pra Web, Mobile e Api.
+- Adicionar gerador de drivers(baixar o driver específico e instalar no local correto.)
 
 ## Contribuição
 

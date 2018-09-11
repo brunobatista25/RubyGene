@@ -1,8 +1,6 @@
-# GenerateRubyTests
+# RubyGene
 
-Bem vindo a gem RubyGene é uma gem baseada na gem [Magneton](https://github.com/concretesolutions/magneton).
-
-O intuito da gem RubyGene é conseguir gerar projetos já configurados para um projeto Web, Mobile ou Api. Todos eles baseados na estrutura de um projeto em cucumber.
+O intuito da RubyGene é conseguir gerar projetos já configurados para um projeto Web, Mobile ou Api. Todos eles baseados na estrutura de um projeto em cucumber, page objects e relatórios.
 
 ## Instalação
 

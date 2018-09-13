@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Generates an Web,Api and Mobile Test Automation project with Cucumber,
     SitePrism, Capybara, Selenium, Httparty and JsonSchema.}
   spec.description   = %q{A simple gem to generate all files needed in a
-    project Mobile, Web and Api.}
+    project Mobile, Web and Api for Testing Automation.}
   spec.homepage      = 'https://github.com/brunobatista25/RubyGene'
   spec.license       = 'MIT'
 

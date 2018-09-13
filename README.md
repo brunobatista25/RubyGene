@@ -11,7 +11,7 @@ O intuito da RubyGene é conseguir gerar projetos já configurados para um proje
 Adicione este comando no terminal:
 
 ```ruby
-gem install generate_ruby_tests
+gem install rubygene
 ```
 
 # Usando a gem

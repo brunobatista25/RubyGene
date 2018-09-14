@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-# encoding: UTF-8
 
 def create_feature_file(name)
   # opcoes usadas para gerar o arquivo na funcao de modelo

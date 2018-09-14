@@ -1,20 +1,19 @@
 #!/usr/bin/env ruby
-# encoding: UTF-8
 
 require 'thor'
 require 'thor/group'
 require 'i18n'
-require 'gherkin' # Used here as a translation source
+require 'gherkin'
 require 'json'
 require 'yaml'
 require 'tempfile'
 
 require File.join(File.dirname(__FILE__),
                   '../lib/generate_ruby_tests/generate_ruby_test_helper')
-require_relative '../lib/generate_ruby_tests/version'
+require_relative '../lib/generate_ruby_tests/version.rb'
 
 module GeneCapybara
-  # Definição de todos os geradores de gemas
+  # Definicao de todos os geradores de gemas
   class Generate < Thor
     include Thor::Actions
 
@@ -75,7 +74,7 @@ module GeneCapybara
     def all_web(name)
       I18n.config.default_locale = options[:lang]
       in_root_project_folder?
-      create_feature_file(name)
+      create_feature_file name
       create_steps_file name
       create_page_file name
     end
@@ -87,7 +86,7 @@ module GeneCapybara
     def all_mobile(name)
       I18n.config.default_locale = options[:lang]
       in_root_project_folder?
-      create_feature_file(name)
+      create_feature_file name
       create_steps_file name
       create_screens_file name
     end
@@ -99,7 +98,7 @@ module GeneCapybara
     def all_api(name)
       I18n.config.default_locale = options[:lang]
       in_root_project_folder?
-      create_feature_file(name)
+      create_feature_file name
       create_steps_file name
       create_service_file name
     end
@@ -115,8 +114,7 @@ module GeneCapybara
   class GeneCapybaraRunner < Thor
     include Thor::Actions
 
-    map '-v' => :version
-    map '--version' => :version
+    map %w[-v --version] => :version
 
     default_task :help
 
@@ -169,7 +167,7 @@ module GeneCapybara
 
     desc 'version', 'Shows the gem version'
     def version
-      puts "GeneCapybara Version #{GeneCapybara::VERSION}"
+      puts "GeneCapybara Version #{GenerateRubyTests::VERSION}"
     end
 
     def self.source_root

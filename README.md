@@ -108,15 +108,15 @@ Agora se precisar criar uma feature, page e step também tem um atalho pra isso 
 ## Gerar feature,page,step
 
 ```ruby
-rubygene generate all_web
+rubygene generate all_web nome_do_arquivo
 ```
 
 Agora se precisar criar uma feature, screens e step também tem um atalho pra isso :)
 
 ## Gerar feature,screens,step
 
-```ruby
-rubygene generate all_mobile
+```ruby 
+rubygene generate all_mobile nome_do_arquivo
 ```
 
 Agora se precisar criar uma feature, services e step também tem um atalho pra isso :)
@@ -124,13 +124,13 @@ Agora se precisar criar uma feature, services e step também tem um atalho pra i
 ## Gerar feature,services,step
 
 ```ruby
-rubygene generate all_api
+rubygene generate all_api nome_do_arquivo
 ```
 
 Por padrão tudo e gerado em inglês caso precise utilizar em português rode com o `--lang=pt`
 
 ```ruby
-rubygene generate all_api --lang=pt
+rubygene generate all_api nome_do_arquivo --lang=pt
 ```
 
 ## Para Proximas versōes

@@ -1,5 +1,5 @@
 # Version 0.3.2
-Release date: /09/2018
+Release date: 14/09/2018
 
 ### Adicionado
 

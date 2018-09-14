@@ -9,6 +9,7 @@ Release date: 14/09/2018
 
 - Ao digitar ```rubygene --version``` não estava funcionando. Agora está corrigido.
 - Melhorias no código pedidos pelo rubocop. 
+- Adicionado suporte para versōes do gherkin >= 2.12.2
 
 ### Mudado
 

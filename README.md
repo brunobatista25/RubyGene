@@ -1,5 +1,6 @@
 [![Gem Version](https://badge.fury.io/rb/rubygene.svg)](https://badge.fury.io/rb/rubygene)
-[ ![Codeship Status for brunobatista25/generate_ruby_tests](https://app.codeship.com/projects/6954dcd0-9694-0136-803d-3204db439b3c/status?branch=master)](https://app.codeship.com/projects/304920)
+[![Build Status](https://travis-ci.org/brunobatista25/RubyGene.svg?branch=master)](https://travis-ci.org/brunobatista25/RubyGene)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/6ac63623b0699225f219/test_coverage)](https://codeclimate.com/github/brunobatista25/RubyGene/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6ac63623b0699225f219/maintainability)](https://codeclimate.com/github/brunobatista25/RubyGene/maintainability)
 
 # Informação sobre atualizaçōes

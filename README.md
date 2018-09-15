@@ -2,6 +2,11 @@
 [ ![Codeship Status for brunobatista25/generate_ruby_tests](https://app.codeship.com/projects/6954dcd0-9694-0136-803d-3204db439b3c/status?branch=master)](https://app.codeship.com/projects/304920)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6ac63623b0699225f219/maintainability)](https://codeclimate.com/github/brunobatista25/RubyGene/maintainability)
 
+# Informação sobre atualizaçōes
+
+Case precise saber o que foi adicionado ou removido da gem basta acessar  [Historico de Atualização](https://github.com/brunobatista25/RubyGene/blob/master/history.md)
+
+
 # RubyGene
 
 O intuito da RubyGene é conseguir gerar projetos já configurados para um projeto Web, Mobile ou Api. Todos eles baseados na estrutura de um projeto em cucumber, page objects e relatórios.

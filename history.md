@@ -1,3 +1,23 @@
+# Version 0.3.3
+Release date: 14/09/2018
+
+### Adicionado
+
+- Nada
+
+### Corrigido
+
+- bug da gem ao gerar projeto.
+
+
+### Mudado
+
+- Nada
+
+### Removido
+
+- Nada
+
 # Version 0.3.2
 Release date: 14/09/2018
 

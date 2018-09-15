@@ -1,14 +1,14 @@
 # Version 0.3.4
-Release date: 15/09/2018
+Release date: 16/09/2018
 
 ### Adicionado
 
-- Nada
+- Testes unitários.
+- Cobertura de código com simplecov.
 
 ### Corrigido
 
-- Nada
-
+- Carregar arquivo yml da configuração de api que estava yaml
 
 ### Mudado
 

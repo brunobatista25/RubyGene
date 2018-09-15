@@ -9,7 +9,7 @@ Case precise saber o que foi adicionado ou removido da gem basta acessar  [Histo
 
 # RubyGene
 
-O intuito da RubyGene é conseguir gerar projetos já configurados para um projeto Web, Mobile ou Api. Todos eles baseados na estrutura de um projeto em cucumber, page objects e relatórios.
+O intuito da RubyGene é conseguir gerar projetos de automação de testes já configurados para um projeto Web, Mobile ou Api. Todos eles baseados na estrutura de um projeto em cucumber, page objects e relatórios.
 
 ## Instalação
 
@@ -30,7 +30,7 @@ rubygene new_web nome_do_projeto
 
 Onde irá gerar um projeto deste modelo, já com tudo configurado:
 
-Features: Onde fica as funcionalidades do projeto;
+Specfications: Onde fica as funcionalidades do projeto;
 
 Steps: Onde são realizados os testes de fato;
 
@@ -48,7 +48,7 @@ rubygene new_api nome_do_projeto
 
 Onde irá gerar um projeto deste modelo, já com tudo configurado:
 
-Features: Onde fica as funcionalidades do projeto;
+Specfications: Onde fica as funcionalidades do projeto;
 
 Steps: Onde são realizados os testes de fato;
 
@@ -66,7 +66,7 @@ rubygene new_mobile nome_do_projeto
 
 Onde irá gerar um projeto deste modelo, já com tudo configurado:
 
-Features: Onde fica as funcionalidades do projeto;
+Specfications: Onde fica as funcionalidades do projeto;
 
 Steps: Onde são realizados os testes de fato;
 

@@ -13,7 +13,7 @@ def scroll_screen(xone, yone, xtwo, ytwo)
 end
 
 After do |scenario|
-  scenario_name = scenario.name..gsub(/[^A-Za-z ]/, '').gsub(/\s+/, '_')
+  scenario_name = scenario.name.gsub(/[^A-Za-z ]/, '').gsub(/\s+/, '_')
 
   if scenario.failed?
     take_screenshot(scenario_name.downcase!, 'failed')

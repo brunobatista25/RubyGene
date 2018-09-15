@@ -1,5 +1,7 @@
-require "bundler/setup"
-require "generate_ruby_tests"
+require 'bundler/setup'
+require 'generate_ruby_tests'
+require 'simplecov'
+SimpleCov.start
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

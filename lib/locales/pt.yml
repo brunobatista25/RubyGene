@@ -1,5 +1,11 @@
 pt:
   first_scenario: "Primeiro Cenário"
+  background: "Contexto"
+  feature: "Funcionalidade"
+  scenario: "Cenário"
+  given: "Dado"
+  when: "Quando"
+  then: "Então"
   comments:
     insert_steps: "Insira os passos"
     elements: "Declare todos os elementos da página"

@@ -2,6 +2,11 @@
 [ ![Codeship Status for brunobatista25/generate_ruby_tests](https://app.codeship.com/projects/6954dcd0-9694-0136-803d-3204db439b3c/status?branch=master)](https://app.codeship.com/projects/304920)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6ac63623b0699225f219/maintainability)](https://codeclimate.com/github/brunobatista25/RubyGene/maintainability)
 
+# Informação sobre atualizaçōes
+
+Case precise saber o que foi adicionado ou removido da gem basta acessar  [Historico de Atualização](https://github.com/brunobatista25/RubyGene/blob/master/history.md)
+
+
 # RubyGene
 
 O intuito da RubyGene é conseguir gerar projetos já configurados para um projeto Web, Mobile ou Api. Todos eles baseados na estrutura de um projeto em cucumber, page objects e relatórios.
@@ -11,7 +16,7 @@ O intuito da RubyGene é conseguir gerar projetos já configurados para um proje
 Adicione este comando no terminal:
 
 ```ruby
-gem install generate_ruby_tests
+gem install rubygene
 ```
 
 # Usando a gem
@@ -108,15 +113,15 @@ Agora se precisar criar uma feature, page e step também tem um atalho pra isso 
 ## Gerar feature,page,step
 
 ```ruby
-rubygene generate all_web
+rubygene generate all_web nome_do_arquivo
 ```
 
 Agora se precisar criar uma feature, screens e step também tem um atalho pra isso :)
 
 ## Gerar feature,screens,step
 
-```ruby
-rubygene generate all_mobile
+```ruby 
+rubygene generate all_mobile nome_do_arquivo
 ```
 
 Agora se precisar criar uma feature, services e step também tem um atalho pra isso :)
@@ -124,13 +129,13 @@ Agora se precisar criar uma feature, services e step também tem um atalho pra i
 ## Gerar feature,services,step
 
 ```ruby
-rubygene generate all_api
+rubygene generate all_api nome_do_arquivo
 ```
 
 Por padrão tudo e gerado em inglês caso precise utilizar em português rode com o `--lang=pt`
 
 ```ruby
-rubygene generate all_api --lang=pt
+rubygene generate all_api nome_do_arquivo --lang=pt
 ```
 
 ## Para Proximas versōes

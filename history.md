@@ -1,3 +1,26 @@
+# Version 0.3.4
+Release date: 15/09/2018
+
+### Adicionado
+
+- Nada
+
+### Corrigido
+
+- Nada
+
+
+### Mudado
+
+- SitePrism foi mudado de '2.15' para '2.15.1', devido a algumas melhorias de performance com o cucumber;
+- Capybara versão alterada de '3.0.3' para '<3.3', versão aconselhada pelo pessoal do siteprism;
+- Foi setado a versão do Selenium '~>3.4', versão aconselhada pelo pessoal do siteprism;
+- Regex no Hooks para obter o nome do relatório foi reduzida para somente uma linha.
+
+### Removido
+
+- Nada
+
 # Version 0.3.3
 Release date: 14/09/2018
 

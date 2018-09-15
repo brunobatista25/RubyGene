@@ -1,5 +1,7 @@
 require 'fileutils'
 require 'simplecov'
+require 'codecov'
+SimpleCov.formatter = SimpleCov::Formatter::Codecov
 SimpleCov.start
 
 RSpec.describe GenerateRubyTests do

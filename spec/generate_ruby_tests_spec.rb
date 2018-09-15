@@ -249,7 +249,7 @@ RSpec.describe GenerateRubyTests do
                        "\n",
                        "######### QUANDO #########\n",
                        "\n",
-                       "######### ENTÃO #########\n")
+                       "######### ENTAO #########\n")
         end
         it 'pages' do
           system "rubygene new_web '#{@project_name_web}'"

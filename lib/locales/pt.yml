@@ -5,7 +5,7 @@ pt:
   scenario: "Cenário"
   given: "Dado"
   when: "Quando"
-  then: "Então"
+  then: "Entao"
   comments:
     insert_steps: "Insira os passos"
     elements: "Declare todos os elementos da página"

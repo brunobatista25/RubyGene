@@ -3,7 +3,6 @@
 require 'thor'
 require 'thor/group'
 require 'i18n'
-require 'gherkin'
 require 'json'
 require 'yaml'
 require 'tempfile'
@@ -104,7 +103,7 @@ module GeneCapybara
     end
 
     def self.source_root
-      File.join(File.dirname(__FILE__), '..', 'lib', 'templates')
+      File.join(File.dirname(__FILE__), '../lib/templates')
     end
   end
 end
@@ -171,32 +170,16 @@ module GeneCapybara
     end
 
     def self.source_root
-      File.join(File.dirname(__FILE__), '..', 'lib', 'templates')
+      File.join(File.dirname(__FILE__), '../lib/templates')
     end
 
     # Substituindo o metodo initialize para carregar todos os
     # traducoes suportadas pelo cucumber gem
     def initialize(*args)
       super
-      # Loading gherkin accepted translations
-      translations_file_path = File.join(
-        Gem.loaded_specs['gherkin'].full_gem_path,
-        'lib', 'gherkin', 'i18n.json')
-      # Analisando o arquivo JSON
-      # Removendo a sequencia * | e toda a alternativa
-      # opcoes para as traducoes do cucumber
-      translations_json = JSON.parse(File.read(translations_file_path)
-                                     .gsub(/\*\|/, '')
-                                     .gsub(/\|.*\"/, '"'))
-      # Convertendo traducoes para YAML e armazenando em um arquivo temporario
-      translations_temp_file = Tempfile.new(['translations', '.yml'])
-      File.write(translations_temp_file, translations_json.to_yaml)
-      # Carregando as traducoes do pepino e do
-      # locales pasta desta gem
       locales_folder_path = File.join(File.dirname(__FILE__),
                                       '../lib/locales')
-      I18n.load_path = Dir[translations_temp_file,
-                           File.join(locales_folder_path, '*.yml')]
+      I18n.load_path = Dir[File.join(locales_folder_path, '*.yml')]
       I18n.backend.load_translations
       I18n.config.enforce_available_locales = true
     end

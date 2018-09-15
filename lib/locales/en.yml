@@ -1,7 +1,14 @@
 en:
   first_scenario: "First Scenario"
+  background: "Background"
+  feature: "Feature"
+  scenario: "Scenario"
+  given: "Given"
+  when: "When"
+  then: "Then"
   comments:
     insert_steps: "Insert steps"
     elements: "Declare all the elements of this page"
     actions: "Declare all actions of this page"
     services: "Where is the configuration of a particular request"
+    

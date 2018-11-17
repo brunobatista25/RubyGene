@@ -1,0 +1,8 @@
+## YAML Templatesss
+---
+#para rodar em um determinado ambiente basta alterar o enviroment
+#para rodar sem headless basta alterar para no_headless
+#para rodar no firefox bastar colocar firefox
+headless: headless
+browser: chrome
+environment: homolog

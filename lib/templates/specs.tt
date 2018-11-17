@@ -1,6 +1,6 @@
-describe <%= 'config[:describe]' %> do
-  context <%= 'config[:context]' %> do
-    it <%= 'config[:it]' %> do
+describe '<%= I18n.translate( config[:describe]) %>' do
+  context '<%= I18n.translate( config[:context]) %>' do
+    it '<%= I18n.translate( config[:it]) %>' do
     end
   end
 end

@@ -42,7 +42,7 @@ module GeneCapybara
            default: :en
     def spec(name)
       I18n.config.default_locale = options[:lang]
-      in_root_project_folder?
+      in_root_project_folder_rspec?
       create_spec_file name
     end
 
@@ -62,7 +62,7 @@ module GeneCapybara
            default: :en
     def rspec_page(name)
       I18n.config.default_locale = options[:lang]
-      in_root_project_folder?
+      in_root_project_folder_rspec?
       create_page_rspec_file name
     end
 
@@ -92,7 +92,7 @@ module GeneCapybara
            default: :en
     def rspec_service(name)
       I18n.config.default_locale = options[:lang]
-      in_root_project_folder?
+      in_root_project_folder_rspec?
       create_service_rspec_file name
     end
 
@@ -138,7 +138,7 @@ module GeneCapybara
            default: :en
     def all_api_rspec(name)
       I18n.config.default_locale = options[:lang]
-      in_root_project_folder?
+      in_root_project_folder_rspec?
       create_service_rspec_file name
       create_spec_file name
     end
@@ -149,7 +149,7 @@ module GeneCapybara
            default: :en
     def all_web_rspec(name)
       I18n.config.default_locale = options[:lang]
-      in_root_project_folder?
+      in_root_project_folder_rspec?
       create_page_rspec_file name
       create_spec_file name
     end

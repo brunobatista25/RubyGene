@@ -6,6 +6,9 @@ en:
   given: "Given"
   when: "When"
   then: "Then"
+  describe: description
+  context: description
+  it: does something
   comments:
     insert_steps: "Insert steps"
     elements: "Declare all the elements of this page"

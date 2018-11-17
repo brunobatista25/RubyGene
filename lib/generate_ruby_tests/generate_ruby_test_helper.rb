@@ -40,6 +40,14 @@ def create_screens_file(name)
                                 "#{name.downcase}_screens.rb"), opts)
 end
 
+def create_spec_file(name)
+  # opcoes usadas para gerar o arquivo na funcao de modelo
+  opts = { name: camelize(name) }
+  # Thor cria um arquivo com base no modelo templates/specs.tt
+  template('specs', File.join(FileUtils.pwd, 'spec',
+                              "#{name.downcase}_spec.rb"), opts)
+end
+
 def camelize(string)
   camelized = ''
   string.split('_').each do |s|

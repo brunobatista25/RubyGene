@@ -170,12 +170,26 @@ module GeneCapybara
     option :lang,
            banner: 'any of the gherkin supported languages',
            default: :en
-    def rspec_web(name)
+    def new_rspec_web(name)
       I18n.config.default_locale = options[:lang]
       # Thor sera responsavel por procurar
       # arquivos e possiveis conflitos
       directory File.join(File.dirname(__FILE__),
-                          '../lib/SkeletonRspec'), name
+                          '../lib/SkeletonRspecWeb'), name
+    end
+
+    desc 'new_rspec_api PROJECT_NAME',
+         'Generates the structure of a new project that uses '\
+         'Capybara, SitePrism, Selenium and Rspec'
+    option :lang,
+           banner: 'any of the gherkin supported languages',
+           default: :en
+    def new_rspec_api(name)
+      I18n.config.default_locale = options[:lang]
+      # Thor sera responsavel por procurar
+      # arquivos e possiveis conflitos
+      directory File.join(File.dirname(__FILE__),
+                          '../lib/SkeletonRspecApi'), name
     end
 
     desc 'version', 'Shows the gem version'

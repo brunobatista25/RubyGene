@@ -6,6 +6,9 @@ pt:
   given: "Dado"
   when: "Quando"
   then: "Entao"
+  describe: descrição
+  context: descrição
+  it: faz alguma coisa
   comments:
     insert_steps: "Insira os passos"
     elements: "Declare todos os elementos da página"

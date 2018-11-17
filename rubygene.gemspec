@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = GenerateRubyTests::VERSION
   spec.authors       = ['brunobatista25']
   spec.email         = ['brunobatista101@gmail.com']
-  spec.summary       = %q{Generates an Web,Api and Mobile Test Automation project with Cucumber,
+  spec.summary       = %q{Generates an Web,Api and Mobile Test Automation project with Cucumber, Rspec,
     SitePrism, Capybara, Selenium, Httparty and JsonSchema.}
   spec.description   = %q{A simple gem to generate all files needed in a
     project Mobile, Web and Api for Testing Automation.}

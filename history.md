@@ -1,82 +1,105 @@
+# History version translate
+
+  Version [Portuguese-br] (https://github.com/brunobatista25/RubyGene/blob/master/docs/history_pt.md)
+
+
+# Version 0.4.0
+Release date: 11/17/2018
+
+### Added
+
+- New functionality to create web projects and api in Rspec.
+- New functionality to create files for web projects and api in Rspec.
+- Unit tests for rspec projects.
+- English and Portuguese translations in readme and history.
+
+### Adjusted
+
+- Adding folder that was missing from reports in mobile project
+
+### Changed
+
+- nothing
+
 # Version 0.3.4
-Release date: 16/09/2018
+Release date: 09/16/2018
 
-### Adicionado
+### Added
 
-- Testes unitários.
-- Cobertura de código com simplecov.
+- Unitary tests.
+- Coverage of code with simplecov.
 
-### Corrigido
+### Adjusted
 
-- Carregar arquivo yml da configuração de api que estava yaml
+- Load yml file from the api configuration that was yaml
 
-### Mudado
+### Changed
 
-- SitePrism foi mudado de '2.15' para '2.15.1', devido a algumas melhorias de performance com o cucumber;
-- Capybara versão alterada de '3.0.3' para '<3.3', versão aconselhada pelo pessoal do siteprism;
-- Foi setado a versão do Selenium '~>3.4', versão aconselhada pelo pessoal do siteprism;
-- Regex no Hooks para obter o nome do relatório foi reduzida para somente uma linha.
+- SitePrism was changed from '2.15' to '2.15.1', ​​due to some performance improvements with the cucumber;
+- Capybara changed version from '3.0.3' to '<3.3', version advised by siteprism personnel;
+- The version of Selenium '~> 3.4' has been set, a version advised by siteprism personnel;
+- Regex in Hooks to get the report name was reduced to only one row.
 
-### Removido
+### Removed
 
-- Nada
+- nothing
 
 # Version 0.3.3
-Release date: 14/09/2018
+Release date: 09/14/2018
 
-### Adicionado
+### Added
 
-- Nada
+- nothing
 
-### Corrigido
+### Adjusted
 
-- bug da gem ao gerar projeto.
+- Gem bug when generating project.
 
 
-### Mudado
+### Changed
 
-- Nada
+- nothing
 
-### Removido
+### Removed
 
-- Nada
+- nothing
 
 # Version 0.3.2
-Release date: 14/09/2018
+Release date: 09/14/2018
 
-### Adicionado
+### Added
 
-- Nada
+- nothing
 
-### Corrigido
+### Adjusted
 
-- Ao digitar ```rubygene --version``` não estava funcionando. Agora está corrigido.
-- Melhorias no código pedidos pelo rubocop. 
-- Melhoria na tradução usando I18n 
+- Typing `` `rubygene --version``` was not working. Now it's fixed.
+- Code improvements requested by rubocop.
+- Improvement in translation using I18n
 
-### Mudado
+### Changed
 
-- nada
+- nothing
 
-### Removido
+### Removed
 
-- Dependência do gerkin para traduzir as features.
+- Dependence of gerkin to translate the features.
 
 # Version 0.3.1
-Release date: 13/09/2018
+Release date: 09/13/2018
 
-### Adicionado
+### Added
 
-- Arquivo com histórico da gem das atualizaçōes
+- File with history of the gem of the updates
 
-### Corrigido
+### Adjusted
 
-- Descrição da gem spec.description
+- Gem description spec.description
 
-### Mudado
+### Changed
 
-- nada
+- nothing
 
-### Removido
+### Removed
 
-- nada
+- nothing

@@ -24,11 +24,27 @@ def create_page_file(name)
                              "#{name.downcase}_page.rb"), opts)
 end
 
+def create_page_rspec_file(name)
+  # opcoes usadas para gerar o arquivo na funcao de modelo
+  opts = { name: camelize(name) }
+  # Thor cria um arquivo com base no modelo templates/page.tt
+  template('page', File.join(FileUtils.pwd, 'pages',
+                             "#{name.downcase}_page.rb"), opts)
+end
+
 def create_service_file(name)
   # opcoes usadas para gerar o arquivo na funcao de modelo
   opts = { name: camelize(name) }
   # Thor cria um arquivo com base no modelo templates/services.tt
   template('services', File.join(FileUtils.pwd, 'features', 'services',
+                                 "#{name.downcase}_services.rb"), opts)
+end
+
+def create_service_rspec_file(name)
+  # opcoes usadas para gerar o arquivo na funcao de modelo
+  opts = { name: camelize(name) }
+  # Thor cria um arquivo com base no modelo templates/services.tt
+  template('services', File.join(FileUtils.pwd, 'services',
                                  "#{name.downcase}_services.rb"), opts)
 end
 
@@ -38,6 +54,14 @@ def create_screens_file(name)
   # Thor cria um arquivo com base no modelo templates/screens.tt
   template('screens', File.join(FileUtils.pwd, 'features', 'screens',
                                 "#{name.downcase}_screens.rb"), opts)
+end
+
+def create_spec_file(name)
+  # opcoes usadas para gerar o arquivo na funcao de modelo
+  opts = { name: camelize(name) }
+  # Thor cria um arquivo com base no modelo templates/specs.tt
+  template('specs', File.join(FileUtils.pwd, 'specs',
+                              "#{name.downcase}_spec.rb"), opts)
 end
 
 def camelize(string)
@@ -51,6 +75,16 @@ end
 def in_root_project_folder?
   # Olha se o usuario esta na pasta raiz do projeto
   unless Dir.exist?(File.join(FileUtils.pwd, 'features', 'specifications'))
+    puts 'Please run this command on the root folder of the project'
+    exit 1
+  end
+  true
+end
+
+
+def in_root_project_folder_rspec?
+  # Olha se o usuario esta na pasta raiz do projeto
+  unless Dir.exist?(File.join(FileUtils.pwd, 'specs'))
     puts 'Please run this command on the root folder of the project'
     exit 1
   end

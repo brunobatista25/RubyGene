@@ -3,159 +3,246 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/6ac63623b0699225f219/test_coverage)](https://codeclimate.com/github/brunobatista25/RubyGene/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6ac63623b0699225f219/maintainability)](https://codeclimate.com/github/brunobatista25/RubyGene/maintainability)
 
-# Informação sobre atualizaçōes
+# Readme version translate
 
-Case precise saber o que foi adicionado ou removido da gem basta acessar  [Historico de Atualização](https://github.com/brunobatista25/RubyGene/blob/master/history.md)
+  Version [Portuguese-br] (https://github.com/brunobatista25/RubyGene/blob/master/docs/Readme_pt.md)
+
+# Update Information
+
+Case needs to know what was added or removed from the gem just access
+ [Update History](https://github.com/brunobatista25/RubyGene/blob/master/history.md)
 
 
 # RubyGene
 
-O intuito da RubyGene é conseguir gerar projetos de automação de testes já configurados para um projeto Web, Mobile ou Api. Todos eles baseados na estrutura de um projeto em cucumber, page objects e relatórios.
+The aim of RubyGene is to generate test automation projects already configured for a Web, Mobile or Api project. All of them based on the structure of a cucumber and Rspec project, page objects and reports.
 
-## Instalação
+## Installation
 
-Adicione este comando no terminal:
+Add this command to the terminal:
 
 ```ruby
 gem install rubygene
 ```
 
-# Usando a gem
+# Using gem
 
+# In a project with Cucumber
 
-## Gerar um projeto Web
+## Generate a web project
 
 ```ruby
 rubygene new_web nome_do_projeto
 ```
 
-Onde irá gerar um projeto deste modelo, já com tudo configurado:
+Where will generate a project of this model, already with everything configured:
 
-Specfications: Onde fica as funcionalidades do projeto;
+Specfications: Where is the functionality of the project?
 
-Steps: Onde são realizados os testes de fato;
+Steps: Where the actual tests are performed;
 
-Pages: Onde fica mapeado os elementos e metódos de uma determinada página;
+Pages: Where is mapped the elements and methods of a particular page;
 
-Support: Onde fica as configuraçōes do projeto;
+Support: Where is the project settings?
 
-Results: Onde fica o resultado dos testes e relatórios.
+Results: Where is the result of the tests and reports.
 
-## Gerar um projeto Api
+## Generate an API project
+
 
 ```ruby
 rubygene new_api nome_do_projeto
 ```
 
-Onde irá gerar um projeto deste modelo, já com tudo configurado:
+Where will generate a project of this model, already with everything configured:
 
-Specfications: Onde fica as funcionalidades do projeto;
+Specfications: Where is the functionality of the project?
 
-Steps: Onde são realizados os testes de fato;
+Steps: Where the actual tests are performed;
 
-Services: Onde fica as configuraçōes do serviço;
+Services: Where the service settings are;
 
-Support: Onde fica as configuraçōes do projeto;
+Support: Where is the project settings?
 
-Results: Onde fica o resultado dos testes e relatórios.
+Results: Where is the result of the tests and reports.
 
-## Gerar um projeto Mobile
+## Generate a Mobile project
 
 ```ruby
 rubygene new_mobile nome_do_projeto
 ```
 
-Onde irá gerar um projeto deste modelo, já com tudo configurado:
+Where will generate a project of this model, already with everything configured:
 
-Specfications: Onde fica as funcionalidades do projeto;
+Specfications: Where is the functionality of the project?
 
-Steps: Onde são realizados os testes de fato;
+Steps: Where the actual tests are performed;
 
-Screens: Onde fica mapeado os elementos e metódos de uma determinada screen;
+Screens: Where is mapped the elements and methods of a given screen;
 
-Support: Onde fica as configuraçōes do projeto;
+Support: Where is the project settings?
 
-Results: Onde fica o resultado dos testes e relatórios.
+Results: Where is the result of the tests and reports.
 
-E tambem é possivel gerar os steps,features,services,pages etc... sozinhos 
+And it is also possible to generate the steps, features, services, pages etc ... alone
 
-## Gerar um step
+## Generate a step
+
 
 ```ruby
 rubygene generate step nome_do_step
 ```
 
-## Gerar um feature
+## Generate a feature
+
 
 ```ruby
 rubygene generate feature nome_da_feature
 ```
 
-## Gerar um page
+## Generate a page
 
 ```ruby
 rubygene generate page nome_da_page
 ```
 
-## Gerar um screens
+## Generate a screens
 
 ```ruby
 rubygene generate screen nome_da_screen
 ```
 
-## Gerar um services
+## Generate a services
+
 
 ```ruby
 rubygene generate service nome_do_service
 ```
 
-Agora se precisar criar uma feature, page e step também tem um atalho pra isso :)
+Now if you need to create a feature, page and step, you also have a shortcut to it :)
  
-## Gerar feature,page,step
+## Generate feature,page,step
 
 ```ruby
 rubygene generate all_web nome_do_arquivo
 ```
 
-Agora se precisar criar uma feature, screens e step também tem um atalho pra isso :)
+Now if you need to create a feature, screens and step also have a shortcut to this :)
 
-## Gerar feature,screens,step
+## Generate feature,screens,step
 
 ```ruby 
 rubygene generate all_mobile nome_do_arquivo
 ```
 
-Agora se precisar criar uma feature, services e step também tem um atalho pra isso :)
+Now if you need to create a feature, services and step also has a shortcut to it :)
 
-## Gerar feature,services,step
+## Generate feature,services,step
 
 ```ruby
 rubygene generate all_api nome_do_arquivo
 ```
 
-Por padrão tudo e gerado em inglês caso precise utilizar em português rode com o `--lang=pt`
+By default everything is generated in English if you need to use `--lang=pt`
 
 ```ruby
 rubygene generate all_api nome_do_arquivo --lang=pt
 ```
 
-## Para Proximas versōes
+# In an Rspec project
 
-- Adicionar gerador pra JsonSchema
-- Adicionar gerador de projeto calabash
-- Adicionar gerador para projetos Rspec pra Web, Mobile e Api.
-- Adicionar gerador de drivers(baixar o driver específico e instalar no local correto.)
+## Generate a web project
 
-## Contribuição
+```ruby
+rubygene new_rspec_web nome_do_projeto
+```
 
-Relatórios de bugs e solicitações de recebimento são bem-vindos no GitHub em https://github.com/brunobatista25/rubygene. Este projeto destina-se a ser um espaço seguro e acolhedor para colaboração, e espera-se que os contribuintes adiram à [Contributor Covenant](http://contributor-covenant.org) Código de conduta.
+Where will generate a project of this model, already with everything configured:
 
-## Licença
+Specs: Where the actual tests are performed;
 
-A gema está disponível como código aberto sob os termos do
+Pages: Where is mapped the elements and methods of a particular page;
+
+Support: Where is the project settings?
+
+Results: Where is the result of the tests and reports.
+
+## Generate an API project
+
+```ruby
+rubygene new_rspec_api nome_do_projeto
+```
+
+Where will generate a project of this model, already with everything configured:
+
+Specs: Where the actual tests are performed;
+
+Services: Where the service settings are;
+
+Support: Where is the project settings?
+
+Results: Where is the result of the tests and reports.
+
+
+## Generate a spec
+
+```ruby
+rubygene generate spec nome_do_spec
+```
+
+## Generate a page
+
+```ruby
+rubygene generate rspec_page nome_da_page
+```
+
+## Generate a services
+
+```ruby
+rubygene generate rspec_service nome_do_service
+```
+
+Now if you need to create a page and spec you also have a shortcut to it :)
+ 
+## Generate page,spec
+
+```ruby
+rubygene generate all_web_rspec nome_do_arquivo
+```
+
+Now if you need to create a services and spec it also has a shortcut to it :)
+
+## Generate services,spec
+
+```ruby
+rubygene generate all_api_rspec nome_do_arquivo
+```
+
+By default everything is generated in English if you need to use `--lang=pt`
+
+```ruby
+rubygene generate all_api_rspec nome_do_arquivo --lang=pt
+```
+
+## For next versions
+
+- Add generator to JsonSchema
+- Add calabash project generator
+- Add generator for Rspec projects to Mobile.
+- Add driver generator (download specific driver and install in the correct location)
+
+## Contribution
+
+Bug reports and receiving requests are welcome on GitHub at
+https://github.com/brunobatista25/rubygene. This project is intended to be a safe and welcoming space for collaboration, and taxpayers are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+## License
+
+The gem is available as open source under the terms of
  [MIT License](https://opensource.org/licenses/MIT).
 
-## Código de conduta
+## Code of conduct
 
-Espera-se que todos que interagem nas bases de código do projeto RubyGene, rastreadores de problemas, salas de bate-papo e listas de discussão sigam o
+
+Everyone who interacts with the RubyGene project codebases, problem trackers, chat rooms, and mailing lists is expected to follow the
  [code of conduct](https://github.com/brunobatista25/rubygene/blob/master/CODE_OF_CONDUCT.md).

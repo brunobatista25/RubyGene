@@ -231,17 +231,18 @@ rubygene generate all_api_rspec nome_do_arquivo --lang=pt
 - Add generator for Rspec projects to Mobile.
 - Add driver generator (download specific driver and install in the correct location)
 
-## Contribuição
+## Contribution
 
 Bug reports and receiving requests are welcome on GitHub at
 https://github.com/brunobatista25/rubygene. This project is intended to be a safe and welcoming space for collaboration, and taxpayers are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-## Licença
+## License
 
-A gema está disponível como código aberto sob os termos do
+The gem is available as open source under the terms of
  [MIT License](https://opensource.org/licenses/MIT).
 
-## Código de conduta
+## Code of conduct
 
-Espera-se que todos que interagem nas bases de código do projeto RubyGene, rastreadores de problemas, salas de bate-papo e listas de discussão sigam o
+
+Everyone who interacts with the RubyGene project codebases, problem trackers, chat rooms, and mailing lists is expected to follow the
  [code of conduct](https://github.com/brunobatista25/rubygene/blob/master/CODE_OF_CONDUCT.md).

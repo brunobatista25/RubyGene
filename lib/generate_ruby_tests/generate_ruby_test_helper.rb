@@ -24,11 +24,27 @@ def create_page_file(name)
                              "#{name.downcase}_page.rb"), opts)
 end
 
+def create_page_rspec_file(name)
+  # opcoes usadas para gerar o arquivo na funcao de modelo
+  opts = { name: camelize(name) }
+  # Thor cria um arquivo com base no modelo templates/page.tt
+  template('page', File.join(FileUtils.pwd, 'pages',
+                             "#{name.downcase}_page.rb"), opts)
+end
+
 def create_service_file(name)
   # opcoes usadas para gerar o arquivo na funcao de modelo
   opts = { name: camelize(name) }
   # Thor cria um arquivo com base no modelo templates/services.tt
   template('services', File.join(FileUtils.pwd, 'features', 'services',
+                                 "#{name.downcase}_services.rb"), opts)
+end
+
+def create_service_rspec_file(name)
+  # opcoes usadas para gerar o arquivo na funcao de modelo
+  opts = { name: camelize(name) }
+  # Thor cria um arquivo com base no modelo templates/services.tt
+  template('services', File.join(FileUtils.pwd, 'services',
                                  "#{name.downcase}_services.rb"), opts)
 end
 

@@ -1,6 +1,6 @@
-describe '<%= config[:describe] %>' do
-  context '<%= config[:context] %>' do
-    it '<%= config[:it] %>' do
+describe <%= 'config[:describe]' %> do
+  context <%= 'config[:context]' %> do
+    it <%= 'config[:it]' %> do
     end
   end
 end

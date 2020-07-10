@@ -15,7 +15,7 @@ Case needs to know what was added or removed from the gem just access
 
 # RubyGene
 
-The aim of RubyGene is to generate test automation projects already configured for a Web, Mobile or Api project. All of them based on the structure of a cucumber and Rspec project, page objects and reports.
+The aim of RubyGene is to generate test automation projects already configured for a Web, Mobile or Api project. All of them based on the structure of a cucumber and Rspec project, page objects and reports. was based on the gem https://github.com/concretesolutions/magneton
 
 ## Installation
 

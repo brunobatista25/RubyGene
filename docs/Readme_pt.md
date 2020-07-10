@@ -11,7 +11,7 @@ Case precise saber o que foi adicionado ou removido da gem basta acessar  [Histo
 
 # RubyGene
 
-O intuito da RubyGene é conseguir gerar projetos de automação de testes já configurados para um projeto Web, Mobile ou Api. Todos eles baseados na estrutura de um projeto em cucumber, Rspec, page objects e relatórios.
+O intuito da RubyGene é conseguir gerar projetos de automação de testes já configurados para um projeto Web, Mobile ou Api. Todos eles baseados na estrutura de um projeto em cucumber, Rspec, page objects e relatórios. Baseado na gem https://github.com/concretesolutions/magneton
 
 ## Instalação
 
